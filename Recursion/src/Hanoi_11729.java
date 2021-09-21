@@ -1,20 +1,20 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class Hanoi_11729 {
-	public static void main(String[] args) {
+	
+	static StringBuilder sb = new StringBuilder();
+	
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
 		
-		Scanner s = new Scanner(System.in);
-		int n = s.nextInt(); //n개의 원판
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(br.readLine());
 		
-		int count = 1;
-		for (int i = 0; i < n; i++) {
-			count *= 2;
-		} //System.out.println((int)Math.pow(2, n) - 1);
-		System.out.println(count - 1);
+		sb.append((int)(Math.pow(2, n) - 1)).append('\n');
 		
 		hanoi(n, 1, 3); 
 		
+		System.out.println(sb);
 	}
 	
 	public static void hanoi(int n, int start, int end) {
@@ -24,13 +24,13 @@ public class Hanoi_11729 {
 		 * 3. n-1개를 6-a-b에서 b로 옮긴다
 		 */
 		
-		if (n == 1) { //base condition (재귀 조건 1)
-			System.out.println(start + " " + end);
+		if (n == 1) {
+			sb.append(start + " " + end + "\n");
 			return;
 		}
 		
-		hanoi(n-1, start, 6 - start - end); //base condition으로 수렴 (재귀 조건 2)
-		System.out.println(start + " " + end);
+		hanoi(n-1, start, 6 - start - end); 
+		sb.append(start + " " + end + "\n");
 		hanoi(n-1, 6 - start - end, end);
 	}
 }
