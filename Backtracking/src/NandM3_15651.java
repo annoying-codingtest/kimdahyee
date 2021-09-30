@@ -2,8 +2,7 @@ import java.util.Scanner;
 public class NandM3_15651 {
 
 	static int n, m;
-	static int[] arr; // 수열을 담을 배열
-	static boolean[] checked; // 1부터 n까지 수의 방문 여부를 담을 배열
+	static int[] arr; 
 	static StringBuilder sb = new StringBuilder();
 	
 	public static void main(String[] args) {
@@ -14,7 +13,6 @@ public class NandM3_15651 {
 		m = s.nextInt();
 		
 		arr = new int[m];
-		checked = new boolean[n];
 		
 		func(0);
 		System.out.print(sb);
