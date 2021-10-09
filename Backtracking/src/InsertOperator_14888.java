@@ -39,13 +39,16 @@ public class InsertOperator_14888 {
 		
 		for (int i = 0; i < 4; i++) {
 			if (operator[i] != 0) {
+				
 				operator[i]--;
+				
 				switch(i) {
 				case 0: func(number + numbers[k], k + 1); break;
 				case 1: func(number - numbers[k], k + 1); break;
 				case 2: func(number * numbers[k], k + 1); break;
 				case 3: func(number / numbers[k], k + 1); break;
 				}
+				
 				operator[i]++;
 			}
 		}
