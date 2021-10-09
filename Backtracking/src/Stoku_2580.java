@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.StringTokenizer;
+import java.util.*;
 public class Stoku_2580 {
 
 	static int[][] arr;
