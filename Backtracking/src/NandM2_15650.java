@@ -31,9 +31,9 @@ public class NandM2_15650 {
 			if (!checked[i]) { 
 				arr[k] = i + 1; 
 				checked[i] = true; 
-				func(k + 1, j + 1); 
+				func(k + 1, i + 1); // j + 1 ´ë½Å i + 1
 				checked[i] = false;
-				j++;
+				//j++;
 			}
 		}
 	}
