@@ -12,9 +12,7 @@ public class Parenthesis_9012 {
 		String[] input = new String[n];
 		for (int i = 0; i < n; i++) {
 			input[i] = s.next();		
-		}
-		
-		for (int i = 0; i < n; i++) {
+			
 			String[] splitArray = new String[input[i].length()];
 			splitArray = input[i].split("");
 			
