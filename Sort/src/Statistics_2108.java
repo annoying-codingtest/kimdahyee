@@ -16,10 +16,10 @@ public class Statistics_2108 {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append(Math.round(mean(arr))).append("\n"); // »ê¼úÆò±Õ
-		sb.append(arr[arr.length / 2]).append("\n"); // Áß¾Ó°ª
-		sb.append(mode(arr)).append("\n"); //ÃÖºó°ª
-		sb.append(arr[arr.length - 1] - arr[0]).append("\n"); //¹üÀ§
+		sb.append(Math.round(mean(arr))).append("\n"); // ì‚°ìˆ í‰ê· 
+		sb.append(arr[arr.length / 2]).append("\n"); // ì¤‘ì•™ê°’
+		sb.append(mode(arr)).append("\n"); //ìµœë¹ˆê°’
+		sb.append(arr[arr.length - 1] - arr[0]).append("\n"); //ë²”ìœ„
 		
 		System.out.println(sb);
 	}

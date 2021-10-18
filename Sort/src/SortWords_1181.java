@@ -15,7 +15,7 @@ public class SortWords_1181 {
 		String[] words = Arrays.stream(input).distinct().toArray(String[]::new);
 		
 		Arrays.sort(words, (e1, e2) -> {
-			if (e1.toString().length() == e2.toString().length()) { //길이가 같으면 사전순
+			if (e1.toString().length() == e2.toString().length()) {
 				return e1.compareTo(e2);
 			} else {
 				return e1.toString().length() - e2.toString().length();

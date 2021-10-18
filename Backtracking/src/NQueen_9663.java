@@ -1,9 +1,9 @@
 import java.util.*;
 public class NQueen_9663 {
 	
-	static boolean[] checked1; // ¿­ ±âÁØ
-	static boolean[] checked2; // ÁËÃøÇÏ´Ü ¿ìÃø»ó´Ü ±âÁØ
-	static boolean[] checked3; // ÁÂÃø»ó´Ü ¿ìÃøÇÏ´Ü ±âÁØ
+	static boolean[] checked1; // ì—´ ê¸°ì¤€
+	static boolean[] checked2; // ì£„ì¸¡í•˜ë‹¨ ìš°ì¸¡ìƒë‹¨ ê¸°ì¤€
+	static boolean[] checked3; // ì¢Œì¸¡ìƒë‹¨ ìš°ì¸¡í•˜ë‹¨ ê¸°ì¤€
 	static int count, n;
 	
 	public static void main(String[] args) {
@@ -26,14 +26,14 @@ public class NQueen_9663 {
 	}
 	
 	public static void func(int current) {
-		if (current == n) { // ¸ğµç Çà¿¡ ÄıÀÌ ´Ù ³õ¿©Á³À¸¸é
+		if (current == n) { // ëª¨ë“  í–‰ì— í€¸ì´ ë‹¤ ë†“ì—¬ì¡Œìœ¼ë©´
 			count++;
 			return;
 		}
 		
 		for (int i = 0; i < n; i++) {
 			if (checked1[i] || checked2[current + i] || checked3[current - i + n - 1]) {
-				// ÀÌ¹Ì ¹æ¹®ÇÑ ÀÌ·ÂÀÌ ÀÖ´Â °÷ÀÌ¶ó¸é ´ÙÀ½À» Å½»ö
+				// ì´ë¯¸ ë°©ë¬¸í•œ ì´ë ¥ì´ ìˆëŠ” ê³³ì´ë¼ë©´ ë‹¤ìŒì„ íƒìƒ‰
 				continue;				
 			}
 			
@@ -41,12 +41,13 @@ public class NQueen_9663 {
 			checked2[current + i] = true;
 			checked3[current - i + n - 1] = true;
 			
-			func(current + 1); // ´ÙÀ½ Çà Å½»ö È£Ãâ
+			func(current + 1); // ë‹¤ìŒ í–‰ íƒìƒ‰ í˜¸ì¶œ
 			
 			checked1[i] = false;
 			checked2[current + i] = false;
 			checked3[current - i + n - 1] = false;
 		}
 	}
+
 
 }

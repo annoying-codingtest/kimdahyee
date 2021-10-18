@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class NandM2_15650 {
 
 	static int n, m;
-	static int[] arr; // ¼ö¿­À» ´ãÀ» ¹è¿­
-	static boolean[] checked; // 1ºÎÅÍ n±îÁö ¼öÀÇ ¹æ¹® ¿©ºÎ¸¦ ´ãÀ» ¹è¿­
+	static int[] arr; // ìˆ˜ì—´ì„ ë‹´ì„ ë°°ì—´
+	static boolean[] checked; // 1ë¶€í„° nê¹Œì§€ ìˆ˜ì˜ ë°©ë¬¸ ì—¬ë¶€ë¥¼ ë‹´ì„ ë°°ì—´
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -18,7 +18,7 @@ public class NandM2_15650 {
 		func(0, 0);
 	}
 	
-	public static void func(int k, int j) { // Å½»ö ½ÃÀÛ Æ÷ÀÎÆ®¸¦ ´ãÀ» º¯¼ö°¡ ÇÙ½É
+	public static void func(int k, int j) { // íƒìƒ‰ ì‹œì‘ í¬ì¸íŠ¸ë¥¼ ë‹´ì„ ë³€ìˆ˜ê°€ í•µì‹¬
 		if (k == m) { 
 			for (int i = 0; i < arr.length; i++) {
 				System.out.print(arr[i] + " ");
@@ -31,7 +31,7 @@ public class NandM2_15650 {
 			if (!checked[i]) { 
 				arr[k] = i + 1; 
 				checked[i] = true; 
-				func(k + 1, i + 1); // j + 1 ´ë½Å i + 1
+				func(k + 1, i + 1); // j + 1 ëŒ€ì‹  i + 1
 				checked[i] = false;
 				//j++;
 			}

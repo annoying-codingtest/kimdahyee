@@ -17,8 +17,8 @@ public class SortByAge_10814 {
 		}
 		
 		Arrays.sort(age, (e1, e2) -> {
-			if (e1[1] == e2[1]) { //나이가 같으면
-				return e1[0] - e2[0]; //등록순 
+			if (e1[1] == e2[1]) { 
+				return e1[0] - e2[0]; 
 			} else {
 				return e1[1] - e2[1];
 			}

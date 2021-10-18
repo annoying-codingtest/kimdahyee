@@ -16,7 +16,7 @@ public class StackSequence_1874 {
 			int input = s.nextInt(); 
 			if (start < input) {
 				for (int i = start + 1; i <= input; i++) { 
-					// ¿À¸§Â÷¼ø pushÀ» À§ÇØ stack¿¡ ¾øÀ¸¸é push
+					// ì˜¤ë¦„ì°¨ìˆœ pushì„ ìœ„í•´ stackì— ì—†ìœ¼ë©´ push
 					stack.push(i);
 					sb.append("+\n");
 				}

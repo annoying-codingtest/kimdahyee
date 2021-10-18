@@ -26,7 +26,7 @@ public class Chess_1018 {
 			}
 		}
 		
-		int n_start = n - 7; // 8*8 Ã¼½ºÆÇÀÌ ¸¸µé¾îÁú ¼ö ÀÖ´Â °æ¿ìÀÇ ¼ö
+		int n_start = n - 7; // 8*8 ì²´ìŠ¤íŒì´ ë§Œë“¤ì–´ì§ˆ ìˆ˜ ìˆëŠ” ê²½ìš°ì˜ ìˆ˜
 		int m_start = m - 7;
 		
 		for (int i = 0; i < n_start; i++) {
@@ -57,8 +57,8 @@ public class Chess_1018 {
 			first = (!first);
 		}
 		
-		count = Math.min(count, 64 - count); //W, BÁß ÃÖ¼ÒÀÇ °æ¿ì Ã£±â	
-		min = Math.min(min, count); //ÀüÃ¼ °æ¿ìÀÇ ¼ö ÃÖ¼ÒÀÇ °æ¿ì Ã£±â
+		count = Math.min(count, 64 - count); //W, Bì¤‘ ìµœì†Œì˜ ê²½ìš° ì°¾ê¸°	
+		min = Math.min(min, count); //ì „ì²´ ê²½ìš°ì˜ ìˆ˜ ìµœì†Œì˜ ê²½ìš° ì°¾ê¸°
 		
 		return min;
 	}

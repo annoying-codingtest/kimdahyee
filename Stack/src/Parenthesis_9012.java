@@ -19,7 +19,7 @@ public class Parenthesis_9012 {
 			int pos = 0;
 			ArrayList<String> data = new ArrayList<>();
 			for (int j = 0; j < splitArray.length; j++) {
-				if (pos == 0) { // ½ºÅÃÀÌ ºñ¾îÀÖÀ¸¸é
+				if (pos == 0) { // ìŠ¤íƒì´ ë¹„ì–´ìžˆìœ¼ë©´
 					data.add(pos++, splitArray[j]);
 				} else { 
 					if (data.get(pos - 1).equals("(") && splitArray[j].equals(")")) {

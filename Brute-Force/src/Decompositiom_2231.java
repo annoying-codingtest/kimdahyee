@@ -6,11 +6,11 @@ public class Decompositiom_2231 {
 		
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
-		int constructor = n; //»ı¼ºÀÚ
+		int constructor = n; //ìƒì„±ì
 			
-		for (int i = 0; i < n; i++) { //0ºÎÅÍ n±îÁö ¸ğµç ¼öÀÇ ºĞÇØÇÕÀ» ±¸ÇØ
-			int num = i; //±ğ¾Æ³»¸± °ª
-			int sum = i; //ºĞÇØÇÕ 
+		for (int i = 0; i < n; i++) { //0ë¶€í„° nê¹Œì§€ ëª¨ë“  ìˆ˜ì˜ ë¶„í•´í•©ì„ êµ¬í•´
+			int num = i; //ê¹ì•„ë‚´ë¦´ ê°’
+			int sum = i; //ë¶„í•´í•© 
 				
 			while (num != 0) {
 				sum += num % 10;
@@ -21,7 +21,7 @@ public class Decompositiom_2231 {
 				constructor = i;
 				break;
 			} else {
-				constructor = 0; //Á¶°Ç ÀØÁö¸»±â
+				constructor = 0; //ì¡°ê±´ ìŠì§€ë§ê¸°
 			}
 		}
 		System.out.println(constructor);

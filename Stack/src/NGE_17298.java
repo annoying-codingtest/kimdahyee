@@ -19,7 +19,7 @@ public class NGE_17298 {
 
 		for (int i = 0; i < n; i++) {
 			while (!stack.empty() && input[stack.peek()] < input[i]) { 
-				// top() °ªÀ¸·Î ÇöÀçÀÇ ¿ø¼Òº¸´Ù Å« °ªÀÌ ³ª¿À±â Àü±îÁö 
+				// top() ê°’ìœ¼ë¡œ í˜„ìž¬ì˜ ì›ì†Œë³´ë‹¤ í° ê°’ì´ ë‚˜ì˜¤ê¸° ì „ê¹Œì§€ 
 				input[stack.pop()] = input[i];
 			}
 			stack.push(i);

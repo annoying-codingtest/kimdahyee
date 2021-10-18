@@ -1,7 +1,7 @@
 import java.util.*;
 public class Fibonacci_1003 {
 
-	static int t; // 테스트 케이스의 개수
+	static int t; 
 	static int max = Integer.MIN_VALUE;
 	static int[] zero, one;
 	

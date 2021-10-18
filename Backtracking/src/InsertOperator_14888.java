@@ -31,7 +31,7 @@ public class InsertOperator_14888 {
 	}
 	
 	public static void func(int number, int k) { 
-		if (k == n) { // n-1°³ÀÇ ¿¬»êÀÚ¸¦ ´Ù »Ì¾ÒÀ¸¸é
+		if (k == n) { // n-1ê°œì˜ ì—°ì‚°ìë¥¼ ë‹¤ ë½‘ì•˜ìœ¼ë©´
 			max = Math.max(max, number);
 			min = Math.min(min, number);
 			return;

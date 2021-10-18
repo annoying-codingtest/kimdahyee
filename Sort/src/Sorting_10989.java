@@ -6,7 +6,6 @@ public class Sorting_10989 {
 		// TODO Auto-generated method stub
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		// BufferedReader는 개행만 경계로 인식
 		StringBuilder sb = new StringBuilder();
 		
 		int n = Integer.parseInt(br.readLine());

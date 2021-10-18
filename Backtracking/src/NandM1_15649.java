@@ -2,8 +2,8 @@ import java.util.*;
 public class NandM1_15649 {
 
 	static int n, m;
-	static int[] arr; // ¼ö¿­À» ´ãÀ» ¹è¿­
-	static boolean[] checked; // 1ºÎÅÍ n±îÁö ¼öÀÇ ¹æ¹® ¿©ºÎ¸¦ ´ãÀ» ¹è¿­
+	static int[] arr; // ìˆ˜ì—´ì„ ë‹´ì„ ë°°ì—´
+	static boolean[] checked; // 1ë¶€í„° nê¹Œì§€ ìˆ˜ì˜ ë°©ë¬¸ ì—¬ë¶€ë¥¼ ë‹´ì„ ë°°ì—´
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,7 +19,7 @@ public class NandM1_15649 {
 	}
 	
 	public static void func(int k) {
-		if (k == m) { // ´Ù »Ì¾ÒÀ¸¸é
+		if (k == m) { // ë‹¤ ë½‘ì•˜ìœ¼ë©´
 			for (int i = 0; i < arr.length; i++) {
 				System.out.print(arr[i] + " ");
 			}
