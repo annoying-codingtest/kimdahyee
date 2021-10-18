@@ -23,7 +23,7 @@ public class Stack_10828 {
 				String[] arr = order[i].split(" ");
 				push(Integer.parseInt(arr[1]));
 			} else if (order[i].equals("pop")) {
-				if (pos == 0) { //스택이 비어있으면
+				if (pos == 0) {
 					sb.append(-1).append("\n");
 				} else {
 					sb.append(top()).append("\n");
