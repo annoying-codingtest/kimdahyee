@@ -21,13 +21,13 @@ public class Stoku_2580 {
 
 	public static void stoku(int row, int col) { 		
 		if (col == 9) {
-			// ÇöÀç ÇàÀÇ °ªÀÌ ´Ù Ã¤¿öÁ³À¸¸é ´ÙÀ½ Çà Å½»ö È£Ãâ
+			// í˜„ì¬ í–‰ì˜ ê°’ì´ ë‹¤ ì±„ì›Œì¡Œìœ¼ë©´ ë‹¤ìŒ í–‰ íƒìƒ‰ í˜¸ì¶œ
 			stoku(row + 1, 0);
 			return; 
 		}
 		
 		if (row == 9) {
-			// ¸ğµç Çà Å½»öÀ» ¿Ï·áÇÏ¸é Ãâ·Â ÈÄ ½Ã½ºÅÛ Á¾·á
+			// ëª¨ë“  í–‰ íƒìƒ‰ì„ ì™„ë£Œí•˜ë©´ ì¶œë ¥ í›„ ì‹œìŠ¤í…œ ì¢…ë£Œ
 			StringBuilder sb = new StringBuilder();
 			for (int i = 0; i < 9; i++) {
 				for (int j = 0; j < 9; j++) {
@@ -36,40 +36,40 @@ public class Stoku_2580 {
 				sb.append("\n");
 			}
 			System.out.print(sb);
-			System.exit(0); // ÇÁ·Î±×·¥ °­Á¦ Á¾·á
+			System.exit(0); // í”„ë¡œê·¸ë¨ ê°•ì œ ì¢…ë£Œ
 		}
 		
 		if (arr[row][col] == 0) { 
 			for (int i = 0; i < 9; i++) {
 				if (check(row, col, i + 1)) { 
-					// 0 ~ 9±îÁö ÇØ´ç ºóÄ­¿¡ µé¾î°¥ ¼ö ÀÖ´ÂÁö È®ÀÎ
-					arr[row][col] = i + 1; // µé¾î°¥ ¼ö ÀÖÀ¸¸é °ª ³Ö°í
-					stoku(row, col + 1); // ´ÙÀ½ ¿­ Å½»ö È£Ãâ
+					// 0 ~ 9ê¹Œì§€ í•´ë‹¹ ë¹ˆì¹¸ì— ë“¤ì–´ê°ˆ ìˆ˜ ìˆëŠ”ì§€ í™•ì¸
+					arr[row][col] = i + 1; // ë“¤ì–´ê°ˆ ìˆ˜ ìˆìœ¼ë©´ ê°’ ë„£ê³ 
+					stoku(row, col + 1); // ë‹¤ìŒ ì—´ íƒìƒ‰ í˜¸ì¶œ
 				}
 			}
 			arr[row][col] = 0;
 			return;
 		}
 		
-		stoku(row, col + 1); // ºóÄ­ÀÌ ¾Æ´Ï¸é ´ÙÀ½ ¿­ Å½»ö
+		stoku(row, col + 1); // ë¹ˆì¹¸ì´ ì•„ë‹ˆë©´ ë‹¤ìŒ ì—´ íƒìƒ‰
 	}
 	
 	public static boolean check(int row, int col, int value) {
-		// value°ªÀÌ ÇØ´ç Ä­¿¡ µé¾î°¡µµ µÇ´ÂÁö¸¦ È®ÀÎÇØÁÖ´Â ÇÔ¼ö
+		// valueê°’ì´ í•´ë‹¹ ì¹¸ì— ë“¤ì–´ê°€ë„ ë˜ëŠ”ì§€ë¥¼ í™•ì¸í•´ì£¼ëŠ” í•¨ìˆ˜
 		
 		for (int i = 0 ; i < 9; i++) {
-			if (arr[row][i] == value) { // ¼¼·Î Ã¼Å©
+			if (arr[row][i] == value) { // ì„¸ë¡œ ì²´í¬
 				return false;
 			}
 		}
 		
 		for (int i = 0 ; i < 9; i++) {
-			if (arr[i][col] == value) { // °¡·Î Ã¼Å©
+			if (arr[i][col] == value) { // ê°€ë¡œ ì²´í¬
 				return false;
 			}
 		}
 		
-		int s_row = (row / 3) * 3; // 3x3ÀÇ ½ÃÀÛÁ¡
+		int s_row = (row / 3) * 3; // 3x3ì˜ ì‹œì‘ì 
 		int s_col = (col / 3) * 3;
 		
 		for (int i = s_row; i < s_row + 3; i++) {
