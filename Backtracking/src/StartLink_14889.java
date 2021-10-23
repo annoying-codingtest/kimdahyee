@@ -46,7 +46,7 @@ public class StartLink_14889 {
 	public static void calculateAblity() { 
 		int start = 0, link = 0;
 		
-		for (int i = 0; i < n -1; i++) {
+		for (int i = 0; i < n - 1; i++) {
 			for(int j = i; j < n; j++) {
 				if (checked[i] && checked[j]) {
 					start += ablity[i][j];
