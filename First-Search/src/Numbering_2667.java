@@ -7,7 +7,7 @@ public class Numbering_2667 {
 	static int[][] map;
 	static boolean[][] checked;
 	static int dx[] = {0, 0, -1, 1}; // 상 하 좌 우
-    static int dy[] = {-1,1, 0, 0};
+    static int dy[] = {-1, 1, 0, 0};
 	static ArrayList<Integer> arr = new ArrayList<>();
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
