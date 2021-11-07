@@ -11,19 +11,18 @@ public class Maze_2178 {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 	
-		Scanner s = new Scanner(System.in);
-		
-		n = s.nextInt();
-		m = s.nextInt();
-		
-		map = new int[n + 1][m + 1];
-		checked = new boolean[n + 1][m + 1];
-		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		n = Integer.parseInt(st.nextToken());
+		m = Integer.parseInt(st.nextToken());
+		
+		map = new int[n][m];
+		checked = new boolean[n][m];
 		
 		for (int i = 0; i < n; i++) {
 			String a = br.readLine();
-			for (int j = 0; j < n; j++) {
+			for (int j = 0; j < m; j++) {
 				map[i][j] = a.charAt(j) - '0';
 			}
 		}
@@ -46,7 +45,7 @@ public class Maze_2178 {
                 int nx = cx + dx[i];
                 int ny = cy + dy[i];
 
-                if (nx >= 0 && ny >= 0 && nx < n && ny < n){
+                if (nx >= 0 && ny >= 0 && nx < n && ny < m){
                     if(map[nx][ny] == 1 && !checked[nx][ny]){
                         q.offer(new int[] {nx, ny});
                         map[nx][ny] = map[cx][cy] + 1;
