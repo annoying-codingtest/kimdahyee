@@ -41,12 +41,12 @@ public class Maze_2178 {
 			int cx = c[0];
             int cy = c[1];
 
-            for (int i = 0; i < 4; i++){
+            for (int i = 0; i < 4; i++) {
                 int nx = cx + dx[i];
                 int ny = cy + dy[i];
 
-                if (nx >= 0 && ny >= 0 && nx < n && ny < m){
-                    if(map[nx][ny] == 1 && !checked[nx][ny]){
+                if (nx >= 0 && ny >= 0 && nx < n && ny < m) {
+                    if (map[nx][ny] == 1 && !checked[nx][ny]) {
                         q.offer(new int[] {nx, ny});
                         map[nx][ny] = map[cx][cy] + 1;
                         checked[nx][ny] = true;
