@@ -5,12 +5,13 @@ public class Maze_2178 {
 	static int n, m;
 	static int[][] map;
 	static boolean[][] checked;
-	static int dx[] = {0, 0, -1, 1}; // 상 하 좌 우
+	static int dx[] = {0, 0, -1, 1}; // 하 상 우 좌
     static int dy[] = {-1, 1, 0, 0};
 	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 	
+		// Scanner와 BufferedReader 동시에 사용 불가
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
@@ -29,6 +30,7 @@ public class Maze_2178 {
 		
 		bfs(0, 0);
 		System.out.println(map[n - 1][m - 1]);
+		
 	}
 	
 	public static void bfs(int x, int y) {

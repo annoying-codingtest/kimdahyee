@@ -6,7 +6,7 @@ public class Numbering_2667 {
 	static int n, start, count = 0;
 	static int[][] map;
 	static boolean[][] checked;
-	static int dx[] = {0, 0, -1, 1}; // 상 하 좌 우
+	static int dx[] = {0, 0, -1, 1}; // 하 상 우 좌
     static int dy[] = {-1, 1, 0, 0};
 	static ArrayList<Integer> arr = new ArrayList<>();
 	
@@ -55,7 +55,7 @@ public class Numbering_2667 {
 
             if(nx >= 0 && ny >= 0 && nx < n && ny < n){
                 if(map[nx][ny] == 1 && !checked[nx][ny]){
-                    dfs(nx,ny);
+                    dfs(nx, ny);
                 }
             }
         }
