@@ -1,6 +1,4 @@
-import java.util.*;
 import java.io.*;
-
 public class ReadVertically_10798 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
