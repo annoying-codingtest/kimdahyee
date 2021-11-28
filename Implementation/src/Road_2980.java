@@ -24,10 +24,12 @@ public class Road_2980 {
 		for (int i = 1; i <= l; i++) {
 			if (light[i][0] != 0) {
 				int temp = time % (light[i][0] + light[i][1]);
+				// 지금 이 빨간불을 기다린 초
 				/* 신호등에 도착한 시간 % (빨간불 + 초록불)의 값이
 				빨간불보다 작거나 같으면 빨간불, 크다면 초록불이라는 것을 알 수 있다. */
 				if (temp >= 0 && temp <= light[i][0]) {
-					time += (light[i][0] - temp);
+					time += (light[i][0] - temp); 
+					// 고로 내가 앞으로 기다려야하는 남은 초
 					// 빨간불이 끝날 때까지 대기
 				}
 			}
