@@ -28,20 +28,6 @@ public class Ant_3048 {
         
         t = Integer.parseInt(br.readLine());
         
-        // 시뮬레이션 이전에 체크
-        if (n2 + n1 - 1 <= t) {
-            for (int i = 0; i < temp2.length; i++) {
-                sb.append(temp2[i]);
-            }
-            
-            for (int i = temp1.length - 1; i >= 0; i--) {
-                sb.append(temp1[i]);
-            }
-            
-            System.out.println(sb.toString());
-            return;
-        }
-        
         while (t --> 0) {
             for (int i = 0; i < list.size() - 1; i++) {
                 Node cur = list.get(i);
