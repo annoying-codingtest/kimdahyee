@@ -32,12 +32,14 @@ public class 올림픽_8979 {
 			}
 		});
 		
-		int count = 1;
+		int count = 1;		
 		for (int i = n - 1; i >= 0; i--) {
 			if (c[i][0] == k) {
 				System.out.print(count);
 				return;
-			} else {
+			} 
+			
+			if (c[i][1] != c[i - 1][1] || c[i][2] != c[i - 1][2] || c[i][3] != c[i - 1][3]) { 
 				count++;
 			}
 		}
