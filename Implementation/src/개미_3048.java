@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class Ant_3048 {
+public class 개미_3048 {
 
 	static int n1, n2, t;
     static ArrayList<Node> list = new ArrayList<>();

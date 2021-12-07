@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class Road_2980 {
+public class 도로와신호등_2980 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub

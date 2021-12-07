@@ -1,5 +1,5 @@
 import java.util.*;
-public class Escape_1085 {
+public class 직사각형에서탈출_1085 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,5 +1,5 @@
 import java.util.*;
-public class Alarm_2884 {
+public class 알람시계_2884 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

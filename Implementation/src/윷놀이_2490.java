@@ -1,5 +1,5 @@
 import java.util.*;
-public class Yut_2490 {
+public class 윷놀이_2490 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

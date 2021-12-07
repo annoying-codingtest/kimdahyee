@@ -1,5 +1,5 @@
 import java.util.*;
-public class ACM_10250 {
+public class ACM호텔_10250 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
