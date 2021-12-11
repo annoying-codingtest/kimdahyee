@@ -14,6 +14,7 @@ public class 날짜계산_1476 {
 		
 		for (int i = 1; i <= size; i++) {
 			if ((i - e) % 15 == 0 && (i - s) % 28 == 0 && (i - m) % 19 == 0) {
+			// if (i % 15 == e && i % 28 == s && i % 19 == m)
 				System.out.println(i);
 				return;
 			}
