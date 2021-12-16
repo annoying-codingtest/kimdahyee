@@ -19,7 +19,7 @@ public static void main(String[] args) throws IOException {
 					queue.offer(Integer.parseInt(st.nextToken()));	
 					break;
 					
-				case "pop" :
+				case "pop":
 					Integer value = queue.poll();	
 					if(value == null) { // 덱에 들어있는 정수가 없으면
 						sb.append(-1).append('\n');
