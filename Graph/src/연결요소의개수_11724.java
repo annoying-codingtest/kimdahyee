@@ -15,7 +15,7 @@ public class 연결요소의개수_11724 {
 		n = Integer.parseInt(st.nextToken());
 		m = Integer.parseInt(st.nextToken());
 		
-		adj = new int[1001][1001];
+		adj = new int[1001][1001]; // n + 1도 상관 x
 		checked = new boolean[1001];
 		
 		for (int i = 0; i < m; i++) {
@@ -27,12 +27,10 @@ public class 연결요소의개수_11724 {
 			adj[x][y] = adj[y][x] = 1;
 		}
 
-		for (int i = 0; i < adj.length; i++) {
-			for (int j = 0; j < adj[i].length; j++) {
-				if (adj[i][j] == 1 && !checked[i]) {
-					dfs(i);
-					count++;
-				}
+		for (int i = 1; i <= n; i++) {
+			if (!checked[i]) { // 값이 1일 필요없이 모든 정점을 일단 탐색
+				dfs(i);
+				count++;
 			}
 		}
 
@@ -42,7 +40,6 @@ public class 연결요소의개수_11724 {
 
 	public static void dfs(int k) {
 		checked[k] = true;
-		
 		for (int i = 1; i <= n; i++) {
 			if (adj[k][i] == 1 && checked[i] == false) {
 				dfs(i);
