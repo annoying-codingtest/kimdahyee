@@ -6,6 +6,7 @@ public class 트리의부모찾기_11725 {
 	public static ArrayList<Integer>[] arr;
 	public static boolean[] checked;
 	
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -42,9 +43,9 @@ public class 트리의부모찾기_11725 {
 	public static void dfs(int k) {
 		checked[k] = true;
 		for (int i : arr[k]) { // 현재 노드와 연결되어 있는 노드들
-			if (!checked[i]) { // 연결되어 있는 노드 중 방문 기록이 없으면
-				parent[i] = k; // 그게 부모 노드
-				dfs(i); // 나머지 자식 노드 탐색
+			if (!checked[i]) { // 연결되어 있는 노드 중 방문 기록이 없는 노드일 경우
+				parent[i] = k; // 현재 탐색하는 노드가 그 노드의 부모 노드
+				dfs(i); // 깊이탐색으로 그 노드의 자식 노드 탐색
 			}
 		}
 	}
