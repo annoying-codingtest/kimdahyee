@@ -28,8 +28,8 @@ public class 괄호의값_2504 {
 				case ")":
 					if (stack.isEmpty() || !stack.peek().equals("(")) {
 						// 짝이 안맞아 -> 올바르지 않은 문자열
-						result = 0;
-						break;
+						System.out.println(0);
+						System.exit(0);
 					}
 					
 					if (arr[i - 1].contentEquals("(")) { 
@@ -44,8 +44,8 @@ public class 괄호의값_2504 {
 				case "]":
 					if (stack.isEmpty() || !stack.peek().equals("[")) {
 						// 올바르지 않은 문자열
-						result  = 0;
-						break;
+						System.out.println(0);
+						System.exit(0);
 					}
 					
 					if (arr[i - 1].contentEquals("[")) { 
@@ -62,5 +62,10 @@ public class 괄호의값_2504 {
 		System.out.println(!stack.isEmpty() ? 0 : result);
 		
 	}
+	
+	/*
+	 * ]()
+	 * 0
+	 */
 
 }
