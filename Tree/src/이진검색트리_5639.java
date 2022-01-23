@@ -1,5 +1,7 @@
 import java.util.*;
 public class 이진검색트리_5639 {
+	
+	// 디버깅이 안돌아가는 이유 확인해보기
 	static int[] tree = new int[10001];
 	
 	public static void main(String[] args) {
@@ -8,7 +10,7 @@ public class 이진검색트리_5639 {
 		Scanner s = new Scanner(System.in);
 		
 		int idx = 0;
-		while(s.hasNext()) {
+		while (s.hasNext()) {
 			tree[idx++] = s.nextInt();
 		}
 		
